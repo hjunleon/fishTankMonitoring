@@ -1,0 +1,57 @@
+// RENAME THIS TO CONSTANTS.H
+#ifndef GLOBAL_CONSTANTS_H_
+#define GLOBAL_CONSTANTS_H_
+
+#include <Arduino.h>
+#include <lmic.h>
+#include <hal/hal.h>
+#include <SPI.h>
+
+
+static const u1_t PROGMEM APPEUI[8] = { 0xE9, 0x86, 0xC3, 0xD6, 0x4F, 0xF9, 0x81, 0x60 };
+static const u1_t PROGMEM DEVEUI[8] = { 0xF9, 0xC1, 0x26, 0xDC, 0x3D, 0xF9, 0x81, 0x60 };
+static const u1_t PROGMEM APPKEY[16] = { 0xDB, 0xAF, 0xEF, 0x45, 0xA0, 0xD1, 0xC5, 0x2C, 0xD8, 0x82, 0x57, 0xA1, 0x52, 0xA9, 0xFF, 0x8E };
+
+#define ENABLE_WS_CON 1  // comment this out if dont want websocket/wireless transmission
+
+// https://docs.espressif.com/projects/esp-idf/en/v4.2.3/esp32/api-reference/peripherals/adc.html
+
+// The ESP32 integrates two 12-bit SAR (Successive Approximation Register) ADCs, supporting a total of 18 measurement channels (analog enabled pins).
+
+// The ADC driver API supports ADC1 (8 channels, attached to GPIOs 32 - 39), and ADC2 (10 channels, attached to GPIOs 0, 2, 4, 12 - 15 and 25 - 27). However, the usage of ADC2 has some restrictions for the application:
+
+//     ADC2 is used by the Wi-Fi driver. Therefore the application can only use ADC2 when the Wi-Fi driver has not started.
+
+//     Some of the ADC2 pins are used as strapping pins (GPIO 0, 2, 15) thus cannot be used freely. Such is the case in the following official Development Kits:
+
+
+#ifndef TEMP_PROBE_ONE_WIRE_BUS
+#define TEMP_PROBE_ONE_WIRE_BUS 22
+#endif
+
+#ifndef DHTPIN
+#define DHTPIN 27     // Digital pin connected to the DHT sensor
+#endif
+
+
+#ifndef PH_PIN
+#define PH_PIN 32// A0 is pin 14
+#endif
+
+#define LIGHT_RELAY_PIN 13
+
+// Wifi creds
+
+static const char* ssid     = "Home";
+static const char* password = "09021964";
+
+static const char* ntpServer = "pool.ntp.org";
+static const long  gmtOffset_sec = 3600 * 8;
+static const int   daylightOffset_sec = 0;
+
+// WS Server
+static const char* ws_url = "192.168.50.39";
+static const int ws_port = 5001;
+static const char* ws_path = "/sendSensorData";  //sendSensorData  websockets
+
+#endif

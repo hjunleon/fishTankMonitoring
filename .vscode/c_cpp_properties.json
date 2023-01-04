@@ -1,0 +1,68 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "D:/Arduino/libraries/**",
+                "D:/Arduino/hardware/**",
+                "D:/alphaE/libraries/**",
+                "C:/Users/${env:USERNAME}/AppData/Local/Arduino15/packages/**",
+                "C:/Users/${env:USERNAME}/AppData/Local/Arduino15/libraries/**",
+                "C:/Users/${env:USERNAME}/Documents/Arduino/libraries/**",
+                "C:/Users/${env:USERNAME}/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.4/tools/sdk/esp32/include/freertos/include/freertos",
+                "C:/Users/${env:USERNAME}/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.4/tools/sdk/esp32/include/newlib/platform_include",
+                "C:/Users/facestomperx/AppData/Local/Arduino15/packages/esp32/tools/xtensa-esp32-elf-gcc/gcc8_4_0-esp-2021r2-patch3/xtensa-esp32-elf/include",
+                "C:/Users/facestomperx/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.4/tools/sdk/esp32/**",
+                "C:/Users/facestomperx/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.4/tools/sdk/esp32/include/freertos/include/**",
+                "C:/Users/facestomperx/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.4/libraries/Wire/src"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.22000.0",
+            "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2017/BuildTools/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64"
+        },
+        {
+            "name": "ESP32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "D:/Arduino/libraries/**",
+                "D:/Arduino/hardware/**",
+                "D:/alphaE/libraries/**",
+                "C:/Users/${env:USERNAME}/AppData/Local/Arduino15/packages/**",
+                "C:/Users/${env:USERNAME}/AppData/Local/Arduino15/libraries/**",
+                "C:/Users/${env:USERNAME}/Documents/Arduino/libraries/**",
+                "C:/Users/${env:USERNAME}/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.4/tools/sdk/esp32/include/freertos/include/freertos",
+                "C:/Users/${env:USERNAME}/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.4/tools/sdk/esp32/include/newlib/platform_include",
+                "C:/Users/${env:USERNAME}/AppData/Local/Arduino15/packages/esp32/tools/xtensa-esp32-elf-gcc/gcc8_4_0-esp-2021r2-patch3/xtensa-esp32-elf/include",
+                "C:/Users/${env:USERNAME}/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.4/tools/sdk/esp32/include/**",
+                "C:/Users/${env:USERNAME}/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.4/tools/sdk/esp32/include/freertos/include/**",
+                "C:/Users/${env:USERNAME}/AppData/Local/Arduino15/packages/esp32/hardware/esp32/2.0.4/libraries/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.22000.0",
+            "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2017/BuildTools/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64",
+            "mergeConfigurations": false,
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}
