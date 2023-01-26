@@ -1,3 +1,4 @@
+#ifdef ENABLE_HELIUM
 #ifndef HELIUM_COMMS_H_
 #define HELIUM_COMMS_H_
 #include <Arduino.h>
@@ -14,4 +15,5 @@ static osjob_t sendjob;
 void do_send(osjob_t* j);
 
 
+#endif
 #endif

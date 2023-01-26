@@ -29,6 +29,8 @@ void setup() {
     say_hi_from("fish tank monitor");
     set_my_device_id();
 
+    
+    #ifdef ENABLE_HELIUM
     // Helium Setup
     // LMIC init
     os_init();
@@ -39,7 +41,7 @@ void setup() {
 
     // Start job (sending automatically starts OTAA too)
     do_send(&sendjob);
-
+    #endif
 
 
     // RTOS TASKS
@@ -62,6 +64,10 @@ void setup() {
 }
 
 void loop() {
+    
+    #ifdef ENABLE_HELIUM
     os_runloop_once();
+    #endif
+
     webSocket.loop();
 }

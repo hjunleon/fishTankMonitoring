@@ -1,3 +1,5 @@
+#ifdef ENABLE_HELIUM
+
 #include "constants.h"
 #include "common.h"
 #include "helium_comms.h"
@@ -188,3 +190,5 @@ void do_send(osjob_t* j){
     }
     // Next TX is scheduled after TX_COMPLETE event.
 }
+
+#endif
